@@ -1,0 +1,9 @@
+const Feed = () => {
+  return (
+    <div>
+      <h1>Social Feed</h1>
+    </div>
+  );
+};
+
+export default Feed;
