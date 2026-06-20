@@ -7,6 +7,7 @@ import {
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Feed from "./pages/Feed";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
 
@@ -29,6 +30,10 @@ function App() {
         <Route
           path="/register"
           element={<Register />}
+        />
+        <Route
+          path="/dashboard"
+          element={<Dashboard />}
         />
 
       </Routes>

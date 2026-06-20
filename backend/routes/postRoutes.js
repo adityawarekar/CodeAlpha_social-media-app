@@ -8,6 +8,7 @@ const auth =
 const {
   createPost,
   getPosts,
+  likePost
 } = require(
   "../controllers/postController"
 );
@@ -24,4 +25,8 @@ router.get(
   getPosts
 );
 
+router.put(
+  "/like/:id",
+  likePost
+);
 module.exports = router;
