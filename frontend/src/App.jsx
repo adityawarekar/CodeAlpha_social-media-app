@@ -4,10 +4,12 @@ import {
   Route
 } from "react-router-dom";
 
+import Landing from "./pages/Landing";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Feed from "./pages/Feed";
 import Dashboard from "./pages/Dashboard";
+import Profile from "./pages/Profile";
 
 function App() {
 
@@ -19,7 +21,7 @@ function App() {
 
         <Route
           path="/"
-          element={<Feed />}
+          element={<Landing />}
         />
 
         <Route
@@ -31,9 +33,20 @@ function App() {
           path="/register"
           element={<Register />}
         />
+
+        <Route
+          path="/feed"
+          element={<Feed />}
+        />
+
         <Route
           path="/dashboard"
           element={<Dashboard />}
+        />
+
+        <Route
+          path="/profile"
+          element={<Profile />}
         />
 
       </Routes>

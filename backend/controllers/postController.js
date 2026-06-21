@@ -1,7 +1,6 @@
 const Post = require("../models/Post");
 
 
-// CREATE POST
 exports.createPost = async (req, res) => {
 
   try {
@@ -29,7 +28,6 @@ exports.createPost = async (req, res) => {
 };
 
 
-// GET POSTS
 exports.getPosts = async (req, res) => {
 
   try {

@@ -28,6 +28,11 @@ app.use(
   require("./routes/postRoutes")
 );
 
+app.use(
+"/api/comments",
+require("./routes/commentRoutes")
+);
+
 const PORT =
   process.env.PORT || 5000;
 

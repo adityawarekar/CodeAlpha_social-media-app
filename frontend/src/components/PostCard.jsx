@@ -1,4 +1,5 @@
 import API from "../api";
+import Comments from "./Comments";
 
 const PostCard = ({
   post,
@@ -62,6 +63,7 @@ const PostCard = ({
         Likes: {post.likes}
 
       </p>
+      <Comments />
 
     </div>
 

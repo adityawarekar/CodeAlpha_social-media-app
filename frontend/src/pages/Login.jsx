@@ -37,7 +37,7 @@ const Login = () => {
         data.token
       );
 
-      navigate("/");
+      navigate("/feed");
 
     } catch (error) {
 

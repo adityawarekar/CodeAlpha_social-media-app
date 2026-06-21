@@ -88,6 +88,17 @@ const Register = () => {
         >
           Register
         </button>
+        <p className="text-center mt-4">
+          Already have an account?
+
+          <button
+            onClick={() => navigate("/login")}
+            className="text-blue-500 ml-2"
+          >
+            Login
+          </button>
+
+        </p>
 
       </form>
 

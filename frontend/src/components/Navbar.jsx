@@ -8,7 +8,7 @@ const Navbar = () => {
 
     localStorage.removeItem("token");
 
-    navigate("/login");
+    navigate("/");
 
   };
 
@@ -18,14 +18,17 @@ const Navbar = () => {
 
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
 
-        <h1 className="text-2xl font-bold">
+        <Link
+          to="/feed"
+          className="text-2xl font-bold"
+        >
           SocialHub 🚀
-        </h1>
+        </Link>
 
         <div className="flex gap-6 items-center">
 
           <Link
-            to="/"
+            to="/feed"
             className="hover:text-blue-400 transition"
           >
             Feed
@@ -36,6 +39,13 @@ const Navbar = () => {
             className="hover:text-blue-400 transition"
           >
             Dashboard
+          </Link>
+
+          <Link
+            to="/profile"
+            className="hover:text-blue-400"
+          >
+            Profile
           </Link>
 
           <button
