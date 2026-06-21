@@ -1,23 +1,33 @@
-# SocialHub - Social Media Platform
+# SocialHub - Social Media Platform 🚀
 
 ## Overview
 
-SocialHub is a full-stack social media platform developed using React.js, Node.js, Express.js, and MongoDB. Users can register, log in securely, create posts, interact with posts through likes, and view platform analytics through a dashboard.
+SocialHub is a full-stack social media web application built using React.js, Node.js, Express.js, and MongoDB. Users can register, log in, create posts, like posts, add comments, view their profile, and monitor activity through a dashboard.
 
 ---
 
 ## Features
 
+### Authentication
+
 * User Registration
-* User Login Authentication
+* User Login
 * JWT Authentication
+
+### Social Features
+
 * Create Posts
 * View Posts
 * Like Posts
-* Dashboard Analytics
-* Protected Routes
-* Responsive User Interface
-* MongoDB Database Integration
+* Comment on Posts
+* User Profile Page
+
+### Dashboard
+
+* Total Posts Analytics
+* Total Likes Analytics
+* Engagement Statistics
+* Recent Activity Section
 
 ---
 
@@ -38,6 +48,7 @@ SocialHub is a full-stack social media platform developed using React.js, Node.j
 ### Database
 
 * MongoDB Atlas
+* Mongoose
 
 ### Authentication
 
@@ -60,16 +71,17 @@ social-media-app/
 │   ├── .env
 │   └── server.js
 │
-└── frontend/
-    ├── src/
-    │   ├── components/
-    │   ├── pages/
-    │   ├── api.js
-    │   ├── App.jsx
-    │   └── main.jsx
-    │
-    ├── public/
-    └── package.json
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── api.js
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   │
+│   └── package.json
+│
+└── README.md
 ```
 
 ---
@@ -79,7 +91,7 @@ social-media-app/
 ### Clone Repository
 
 ```bash
-git clone https://github.com/adityawarekar/social-media-app.git
+git clone <your-github-repository-url>
 ```
 
 ### Backend Setup
@@ -89,7 +101,7 @@ cd backend
 
 npm install
 
-npm run dev
+npm start
 ```
 
 ### Frontend Setup
@@ -100,6 +112,18 @@ cd frontend
 npm install
 
 npm run dev
+```
+
+---
+
+## Environment Variables
+
+Create a `.env` file inside the backend folder:
+
+```env
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
 ```
 
 ---
@@ -121,47 +145,22 @@ POST /api/posts
 PUT /api/posts/like/:id
 ```
 
----
+### Comments
 
-## Dashboard
-
-The dashboard provides:
-
-* Total Posts Count
-* Total Likes Count
-* Engagement Statistics
-* Recent Activity Section
-* Platform Information
+```http
+POST /api/comments/:postId
+GET /api/comments/:postId
+```
 
 ---
 
-## Screenshots
+## Future Improvements
 
-### Login Page
-
-(Add Screenshot)
-
-### Register Page
-
-(Add Screenshot)
-
-### Feed Page
-
-(Add Screenshot)
-
-### Dashboard Page
-
-(Add Screenshot)
-
----
-
-## Future Enhancements
-
-* User Profiles
-* Comments System
+* Follow System
 * Image Uploads
-* Follow/Unfollow Users
 * Dark Mode
+* Real-Time Chat
+* Notifications
 
 ---
 
